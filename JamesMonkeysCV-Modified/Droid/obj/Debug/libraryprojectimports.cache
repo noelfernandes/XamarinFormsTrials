@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.CarouselView.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.CarouselView.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.CarouselView.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.CarouselView.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.CarouselView.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.CarouselView.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\SOFTWARES\DEVELOPERTOOLS\Xamarin\Xamarin.Forms-Monkeys-master\Monkeys-CarouselView\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>
