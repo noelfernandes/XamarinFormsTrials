@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<t:SlideMenuView xmlns="http://xamarin.com/schemas/2014/forms" 
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                 xmlns:t="clr-namespace:SlideOverKit;assembly=SlideOverKit"  
+                 x:Class="SOKTrials.SettingsPage">
+    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+        <Label Text="This is the Settings page. Should slide down from top or slide in from the right depending on how it is configured." TextColor="Black" />
+    </StackLayout>
+</t:SlideMenuView>
