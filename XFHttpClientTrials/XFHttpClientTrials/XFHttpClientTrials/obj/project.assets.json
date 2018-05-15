@@ -11,25 +11,13 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "modernhttpclient-updated/2.7.0": {
+      "modernhttpclient-updated/2.6.0": {
         "type": "package",
-        "dependencies": {
-          "MSBuild.Sdk.Extras": "1.4.0"
-        },
         "compile": {
           "lib/netstandard2.0/ModernHttpClient.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/ModernHttpClient.dll": {}
-        }
-      },
-      "MSBuild.Sdk.Extras/1.4.0": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
         }
       },
       "NETStandard.Library/2.0.1": {
@@ -89,73 +77,18 @@
         "runtime.json"
       ]
     },
-    "modernhttpclient-updated/2.7.0": {
-      "sha512": "6cO1nBFiU2duiRRyPZ036mAhYbjy4z91VUlcIaFInklW/gC0tlRWTkX6YvUgd9Nkn92mKDTZqKeXADIGcZBqug==",
+    "modernhttpclient-updated/2.6.0": {
+      "sha512": "XIbRU4mF8qHjV7hQqaFQefHQcRitOJRur5EUr/PYytQNqpAyNo/Kg8LrQAibVjDwvwDt+U8zMOMyuZnPTzeEzQ==",
       "type": "package",
-      "path": "modernhttpclient-updated/2.7.0",
+      "path": "modernhttpclient-updated/2.6.0",
       "files": [
-        "lib/monoandroid80/ModernHttpClient.dll",
-        "lib/monoandroid80/ModernHttpClient.xml",
+        "lib/MonoAndroid/ModernHttpClient.dll",
+        "lib/UAP10/ModernHttpClient.dll",
+        "lib/Xamarin.iOS10/ModernHttpClient.dll",
         "lib/netstandard2.0/ModernHttpClient.dll",
-        "lib/netstandard2.0/ModernHttpClient.xml",
-        "lib/uap10.0.15063/ModernHttpClient.dll",
-        "lib/uap10.0.15063/ModernHttpClient.pri",
-        "lib/uap10.0.15063/ModernHttpClient.xml",
-        "lib/xamarinios10/ModernHttpClient.dll",
-        "lib/xamarinios10/ModernHttpClient.xml",
-        "modernhttpclient-updated.2.7.0.nupkg.sha512",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/ModernHttpClient.dll",
+        "modernhttpclient-updated.2.6.0.nupkg.sha512",
         "modernhttpclient-updated.nuspec"
-      ]
-    },
-    "MSBuild.Sdk.Extras/1.4.0": {
-      "sha512": "5aPz92TaiJw0RgpRXaBj+fo86AnWUJgKIIAJbXFaf9Kr/ao26YaiPgpcOIA7NzKBSxp9/mQWD/xBz2rJIkVDvA==",
-      "type": "package",
-      "path": "msbuild.sdk.extras/1.4.0",
-      "files": [
-        "Sdk/Sdk.props",
-        "Sdk/Sdk.targets",
-        "build/MSBuild.Sdk.Extras.Common.targets",
-        "build/MSBuild.Sdk.Extras.Core.targets",
-        "build/MSBuild.Sdk.Extras.props",
-        "build/MSBuild.Sdk.Extras.targets",
-        "build/NuGet.Workarounds.1.x.targets",
-        "build/Platform.targets",
-        "build/platforms/MonoAndroid.targets",
-        "build/platforms/NETFramework.targets",
-        "build/platforms/Portable.targets",
-        "build/platforms/Silverlight.targets",
-        "build/platforms/Tizen.targets",
-        "build/platforms/Windows.targets",
-        "build/platforms/WindowsPhone.targets",
-        "build/platforms/WindowsPhoneApp.targets",
-        "build/platforms/Xamarin.Mac.targets",
-        "build/platforms/Xamarin.TVOS.targets",
-        "build/platforms/Xamarin.WatchOS.targets",
-        "build/platforms/Xamarin.iOS.targets",
-        "build/platforms/frameworkResolvers/Portable.v0.0.targets",
-        "build/platforms/frameworkResolvers/Portable.v4.0.targets",
-        "build/platforms/frameworkResolvers/Portable.v4.5.targets",
-        "build/platforms/frameworkResolvers/Portable.v4.6.targets",
-        "build/platforms/languageTargets/CommonAfter.targets",
-        "build/platforms/languageTargets/MonoAndroid.targets",
-        "build/platforms/languageTargets/Portable.targets",
-        "build/platforms/languageTargets/Rules/ApplicationDefinition.xml",
-        "build/platforms/languageTargets/Rules/Page.xml",
-        "build/platforms/languageTargets/Rules/Resource.xml",
-        "build/platforms/languageTargets/Rules/Wpf.ProjectItemsSchema.xml",
-        "build/platforms/languageTargets/Silverlight.targets",
-        "build/platforms/languageTargets/Windows.targets",
-        "build/platforms/languageTargets/WindowsPhone.targets",
-        "build/platforms/languageTargets/Wpf.targets",
-        "build/platforms/languageTargets/Xamarin.Mac.targets",
-        "build/platforms/languageTargets/Xamarin.TVOS.targets",
-        "build/platforms/languageTargets/Xamarin.WatchOS.targets",
-        "build/platforms/languageTargets/Xamarin.iOS.targets",
-        "buildMultiTargeting/MSBuild.Sdk.Extras.props",
-        "buildMultiTargeting/MSBuild.Sdk.Extras.targets",
-        "buildMultiTargeting/NuGet.Workarounds.1.x.targets",
-        "msbuild.sdk.extras.1.4.0.nupkg.sha512",
-        "msbuild.sdk.extras.nuspec"
       ]
     },
     "NETStandard.Library/2.0.1": {
@@ -346,11 +279,13 @@
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
         "lib/MonoAndroid10/FormsViewGroup.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
@@ -467,7 +402,7 @@
       "NETStandard.Library >= 2.0.1",
       "Newtonsoft.Json >= 11.0.2",
       "Xamarin.Forms >= 3.0.0.482510",
-      "modernhttpclient-updated >= 2.7.0"
+      "modernhttpclient-updated >= 2.6.0"
     ]
   },
   "packageFolders": {
@@ -530,7 +465,7 @@
           },
           "modernhttpclient-updated": {
             "target": "Package",
-            "version": "[2.7.0, )"
+            "version": "[2.6.0, )"
           }
         },
         "imports": [

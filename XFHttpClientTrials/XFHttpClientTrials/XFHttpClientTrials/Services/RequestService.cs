@@ -13,34 +13,30 @@ namespace XFHttpClientTrials.Services
 {
     public class RequestService : IRequestService
     {
-        private static HttpClient instance;
-        private static HttpClient HttpClientInstance => instance ?? (instance = new HttpClient(new NativeMessageHandler() { EnableUntrustedCertificates = true, DisableCaching = true }));
-        //new NativeMessageHandler() { Timeout = new TimeSpan(0, 0, 9), EnableUntrustedCertificates = true, DisableCaching = true }
         public async Task<TResult> GetAsync<TResult>(string uri, string token = "")
         {
-            setupHttpClient(token);
-            HttpResponseMessage response;
-            try
+            using (var client = new HttpClient(new NativeMessageHandler() { EnableUntrustedCertificates = true, DisableCaching = true }))
             {
-                response = await HttpClientInstance.GetAsync(uri);//.ConfigureAwait(false);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            await HandleResponse(response);
-            string responseData = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-            return await Task.Run(() => JsonConvert.DeserializeObject<TResult>(responseData));
-        }
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-        private void setupHttpClient(string token = "")
-        {
-            HttpClientInstance.DefaultRequestHeaders.Accept.Clear();
-            HttpClientInstance.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                if (!string.IsNullOrWhiteSpace(token))
+                {
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", token);
+                }
 
-            if (!string.IsNullOrWhiteSpace(token))
-            {
-                HttpClientInstance.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", token);
+                HttpResponseMessage response;
+                try
+                {
+                    response = await client.GetAsync(uri);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                await HandleResponse(response);
+                string responseData = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                return await Task.Run(() => JsonConvert.DeserializeObject<TResult>(responseData));
             }
         }
 
