@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ListViewEventBubbles"
+             x:Class="ListViewEventBubbles.MainPage"
+             x:Name="BanksPage">
+
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="0" Padding="0">
+        <ListView x:Name="LVBanks" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="0" ItemsSource="{Binding Banks}" 
+                  SelectedItem="{Binding SelectedBank}" SelectionMode="Single" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,5,0,5" Padding="5,0,5,0">
+
+                            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" 
+                                         Margin="0,0,0,10">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.DetailsCommand, Source={x:Reference Name=BanksPage}}" CommandParameter="{Binding .Balance}" />
+                                </StackLayout.GestureRecognizers>
+                                
+                                <Label Text="{Binding Balance.Title}" HeightRequest="50" HorizontalOptions="CenterAndExpand" 
+                                       VerticalOptions="CenterAndExpand" />
+                                <Label Text="{Binding Balance.Value}" HeightRequest="50" HorizontalOptions="CenterAndExpand" 
+                                       VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        
+                            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" 
+                                         Margin="0,0,0,10">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.DetailsCommand, Source={x:Reference Name=BanksPage}}" CommandParameter="{Binding .MoneyIn}" />
+                                </StackLayout.GestureRecognizers>
+                                
+                                <Label Text="{Binding MoneyIn.Title}" HeightRequest="50" HorizontalOptions="CenterAndExpand" 
+                                       VerticalOptions="CenterAndExpand" />
+                                <Label Text="{Binding MoneyIn.Value}" HeightRequest="50" HorizontalOptions="CenterAndExpand" 
+                                       VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        
+                            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="EndAndExpand" 
+                                         Margin="0,0,0,10">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.DetailsCommand, Source={x:Reference Name=BanksPage}}" CommandParameter="{Binding .MoneyOut}" />
+                                </StackLayout.GestureRecognizers>
+                                
+                                <Label Text="{Binding MoneyOut.Title}" HeightRequest="50" HorizontalOptions="CenterAndExpand" 
+                                       VerticalOptions="CenterAndExpand" />
+                                <Label Text="{Binding MoneyOut.Value}" HeightRequest="50" HorizontalOptions="CenterAndExpand" 
+                                       VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

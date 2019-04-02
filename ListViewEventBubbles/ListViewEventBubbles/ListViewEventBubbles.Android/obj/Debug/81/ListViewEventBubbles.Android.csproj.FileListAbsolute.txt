@@ -1,0 +1,1 @@
+C:\Projects\XAMARIN\POCs\ListViewEventBubbles\ListViewEventBubbles\ListViewEventBubbles\bin\Debug\netstandard2.0\ListViewEventBubbles.dll
